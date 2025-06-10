@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Profile - JWcashnest Bank</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>My Profile - JWcashnest BANK</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: linear-gradient(#f0f0f0, #dfefff);
+    }
+    .profile-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+    h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .info-label {
+      font-weight: bold;
+      color: #333;
+    }
+    .info-value {
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
-    <div class="user-info">
-      Welcome, <strong>Sukhdev Mondal</strong>
-    </div>
-  </header>
 
-  <main class="dashboard">
-    <h2>Account Holder Profile</h2>
-    <div class="profile-card">
-      <i class="fa fa-user-circle profile-icon"></i>
-      <h3>Sukhdev Mondal</h3>
-      <p><strong><i class="fa fa-id-card"></i> Aadhaar:</strong> 7124 5874 9002</p>
-      <p><strong><i class="fa fa-id-badge"></i> PAN:</strong> DKJPM5612B</p>
-      <p><strong><i class="fa fa-envelope"></i> Email:</strong> sukhdevmondal@email.com</p>
-      <p><strong><i class="fa fa-phone"></i> Phone:</strong> +91 94321 87654</p>
-      <p><strong><i class="fa fa-location-dot"></i> Address:</strong> 47/2A Naihati Main Rd, West Bengal, India</p>
-      <p><strong><i class="fa fa-gear"></i> Preferences:</strong> Language: English, Notifications: SMS & Email</p>
+  <div class="profile-container">
+    <h2>My Profile</h2>
+
+    <div class="section">
+      <h3>Personal Details</h3>
+      <div class="info-row"><span class="info-label">Name:</span><span class="info-value">Sukhdev Mondal</span></div>
+      <div class="info-row"><span class="info-label">Account ID:</span><span class="info-value">1000054871245007</span></div>
+      <div class="info-row"><span class="info-label">Account Type:</span><span class="info-value">Current Account</span></div>
     </div>
-    <a href="home.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
-  </main>
+
+    <div class="section">
+      <h3>KYC Information</h3>
+      <div class="info-row"><span class="info-label">Aadhaar:</span><span class="info-value">5678 1234 9876</span></div>
+      <div class="info-row"><span class="info-label">PAN:</span><span class="info-value">DJTPT8854K</span></div>
+      <div class="info-row"><span class="info-label">Email:</span><span class="info-value">sukhdevmondal0505@gmail.com</span></div>
+      <div class="info-row"><span class="info-label">Phone:</span><span class="info-value">+91-9804788445</span></div>
+    </div>
+
+    <div class="section">
+      <h3>Preferences</h3>
+      <div class="info-row"><span class="info-label">Language:</span><span class="info-value">English</span></div>
+      <div class="info-row"><span class="info-label">Notifications:</span><span class="info-value">Enabled</span></div>
+      <div class="info-row"><span class="info-label">2FA:</span><span class="info-value">Active</span></div>
+    </div>
+
+  </div>
+
 </body>
 </html>
