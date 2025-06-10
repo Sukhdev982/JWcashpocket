@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - JWcashnest Bank</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="dashboard">
+  <header>
+    <div class="logo">🏦 JWcashnest BANK</div>
+    <a class="logout" href="index.html">Logout</a>
+  </header>
+  <main>
+    <h1>Welcome, Sukhdev Mondal</h1>
+    <p>Account Number: 1000054871245007</p>
+    <p>Account Type: Current Account</p>
+    <p>Balance: <span id="balance">*******</span>
+    <button onclick="toggleBalance()">👁️ Show</button></p>
+    <nav>
+      <a href="#">Transfer</a>
+      <a href="#">Statements</a>
+      <a href="#">👤 Profile</a>
+      <a href="#">📄 Bill Payments</a>
+      <a href="#">👥 Beneficiaries</a>
+      <a href="#">💳 Loans & Cards</a>
+      <a href="#">🛠️ Support</a>
+      <a href="#">📊 Account Overview</a>
+    </nav>
+  </main>
+  <script>
+    function toggleBalance() {
+      const bal = document.getElementById("balance");
+      bal.textContent = bal.textContent === "*******" ? "₹8,45,23,500.00" : "*******";
+    }
+  </script>
+</body>
+</html>
