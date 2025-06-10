@@ -1,70 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beneficiaries - JWcashnest Bank</title>
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>🏦 JWcashnest BANK</h1>
-    <a href="logout.html" class="logout-link">Logout</a>
+  <header class="header">
+    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
+    <div class="user-info">
+      Welcome, <strong>Sukhdev Mondal</strong>
+    </div>
   </header>
 
-  <main>
-    <h2>👥 Saved Beneficiaries</h2>
-
-    <table class="beneficiary-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Account Number</th>
-          <th>Bank</th>
-          <th>IFSC Code</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Rohit Sharma</td>
-          <td>5423010098761234</td>
-          <td>HDFC Bank</td>
-          <td>HDFC0000456</td>
-        </tr>
-        <tr>
-          <td>Anjali Gupta</td>
-          <td>2389100032145678</td>
-          <td>State Bank of India</td>
-          <td>SBIN0000789</td>
-        </tr>
-        <tr>
-          <td>Rahul Mehra</td>
-          <td>7654321098765432</td>
-          <td>ICICI Bank</td>
-          <td>ICIC0000666</td>
-        </tr>
-        <tr>
-          <td>Priya Verma</td>
-          <td>1199887766554433</td>
-          <td>Axis Bank</td>
-          <td>UTIB0000211</td>
-        </tr>
-        <tr>
-          <td>Amit Banerjee</td>
-          <td>9988776655443322</td>
-          <td>Punjab National Bank</td>
-          <td>PUNB0012345</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="nav-links">
-      <a href="Home.html">🏠 Home</a>
-      <a href="transfer.html">💸 Transfer Money</a>
+  <main class="dashboard">
+    <h2>Saved Beneficiaries</h2>
+    <div class="beneficiary-grid">
+      <div class="beneficiary-card">
+        <i class="fa fa-user"></i>
+        <h3>Priya Sen</h3>
+        <p><strong>Account:</strong> 4985100024578</p>
+        <p><strong>Bank:</strong> SBI</p>
+        <p><strong>IFSC:</strong> SBIN0001245</p>
+      </div>
+      <div class="beneficiary-card">
+        <i class="fa fa-user"></i>
+        <h3>Rakesh Dutta</h3>
+        <p><strong>Account:</strong> 32014578900231</p>
+        <p><strong>Bank:</strong> HDFC Bank</p>
+        <p><strong>IFSC:</strong> HDFC0001587</p>
+      </div>
+      <div class="beneficiary-card">
+        <i class="fa fa-user"></i>
+        <h3>Anjali Verma</h3>
+        <p><strong>Account:</strong> 7630012487963</p>
+        <p><strong>Bank:</strong> ICICI Bank</p>
+        <p><strong>IFSC:</strong> ICIC0000357</p>
+      </div>
+      <div class="beneficiary-card">
+        <i class="fa fa-user"></i>
+        <h3>Mohammed Irfan</h3>
+        <p><strong>Account:</strong> 88120005745621</p>
+        <p><strong>Bank:</strong> Axis Bank</p>
+        <p><strong>IFSC:</strong> UTIB0002045</p>
+      </div>
+      <div class="beneficiary-card">
+        <i class="fa fa-user"></i>
+        <h3>Ritu Mahapatra</h3>
+        <p><strong>Account:</strong> 24457890000123</p>
+        <p><strong>Bank:</strong> Bank of Baroda</p>
+        <p><strong>IFSC:</strong> BARB0DBKANP</p>
+      </div>
     </div>
+    <a href="home.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
   </main>
-
-  <footer>
-    <p>© 2025 JWcashnest Bank. All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
+
