@@ -26,3 +26,44 @@ button {
   border: none;
   cursor: pointer;
 }
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.logout-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #cc0000;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.welcome-section {
+  background: #f8f8f8;
+  padding: 30px;
+  text-align: center;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.features-grid a {
+  display: block;
+  padding: 20px;
+  background: #004aad;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.features-grid a:hover {
+  background: #003399;
+}
