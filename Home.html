@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JWcashnest BANK - Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JWcashnest Bank - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>🏦 JWcashnest BANK</h1>
-    <a href="logout.html" class="logout-btn">Logout</a>
+  <header class="header">
+    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
+    <div class="user-info">
+      Welcome, <strong>Sukhdev Mondal</strong> | A/C: 1000054871245007
+    </div>
   </header>
 
-  <section class="welcome-section">
-    <h2>Welcome, Sukhdev Mondal</h2>
-    <p>Account Number: 1000054871245007</p>
-    <p>Account Type: Current Account</p>
-    <p>
-      Balance:
-      <span id="balance" style="font-weight: bold;">******</span>
-      <button onclick="toggleBalance()">👁 Show</button>
-    </p>
-  </section>
-
-  <section class="features-grid">
-    <a href="transfer.html">💸 Transfer Money</a>
-    <a href="statements.html">📄 Account Statement</a>
-    <a href="profile.html">👤 Profile</a>
-    <a href="billpayment.html">🧾 Bill Payments</a>
-    <a href="beneficiaries.html">👥 Beneficiaries</a>
-    <a href="loan.html">💳 Loans & Cards</a>
-    <a href="support.html">🛠 Support</a>
-    <a href="account.html">📊 Account Overview</a>
-  </section>
+  <main class="dashboard">
+    <h2>Dashboard</h2>
+    <div class="features-grid">
+      <a href="home.html" class="card"><i class="fa fa-home"></i> Home</a>
+      <a href="account.html" class="card"><i class="fa fa-wallet"></i> Account Summary</a>
+      <a href="statements.html" class="card"><i class="fa fa-file-invoice"></i> Statements</a>
+      <a href="transfer.html" class="card"><i class="fa fa-money-bill-transfer"></i> Transfer Money</a>
+      <a href="beneficiaries.html" class="card"><i class="fa fa-users"></i> Beneficiaries</a>
+      <a href="bills.html" class="card"><i class="fa fa-bolt"></i> Bill Payments</a>
+      <a href="loans.html" class="card"><i class="fa fa-credit-card"></i> Loans & Cards</a>
+      <a href="support.html" class="card"><i class="fa fa-headset"></i> Support</a>
+      <a href="profile.html" class="card"><i class="fa fa-user-cog"></i> Profile</a>
+      <a href="index.html" class="card logout"><i class="fa fa-sign-out-alt"></i> Logout</a>
+    </div>
+  </main>
 </body>
 </html>
+
