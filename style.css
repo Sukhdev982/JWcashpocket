@@ -1,0 +1,65 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logout-btn, .logout-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.welcome-section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.features-grid a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #e6f0ff;
+  color: #003366;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.features-grid a:hover {
+  background-color: #cce0ff;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
