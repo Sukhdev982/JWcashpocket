@@ -67,3 +67,39 @@ header {
 .features-grid a:hover {
   background: #003399;
 }
+.transfer-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f8fb;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.transfer-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.transfer-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transfer-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #004aad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transfer-form button:hover {
+  background-color: #003080;
+}
