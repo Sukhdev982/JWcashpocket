@@ -168,5 +168,31 @@ table tr:hover {
   margin-bottom: 8px;
   color: #003f6b;
 }
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.profile-card h3 {
+  margin-top: 0;
+  color: #003f6b;
+}
+
+.profile-card p {
+  font-size: 1.05rem;
+  margin: 12px 0;
+}
+
+.profile-icon {
+  font-size: 4rem;
+  color: #005aa7;
+  display: block;
+  margin: 10px auto 20px;
+}
 
 
