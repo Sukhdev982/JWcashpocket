@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Account Summary - JWcashnest Bank</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <title>Account Overview - JWcashnest Bank</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
-    <div class="user-info">
-      Welcome, <strong>Sukhdev Mondal</strong>
-    </div>
+  <header>
+    <h1>🏦 JWcashnest BANK</h1>
+    <a href="logout.html" class="logout-link">Logout</a>
   </header>
 
-  <main class="dashboard">
-    <h2>Account Summary</h2>
-    <div class="account-card">
-      <i class="fa fa-user-circle"></i>
-      <h3>Sukhdev Mondal</h3>
+  <main>
+    <h2>Account Overview</h2>
+    <div class="account-details">
+      <p><strong>Account Holder:</strong> Sukhdev Mondal</p>
       <p><strong>Account Number:</strong> 1000054871245007</p>
       <p><strong>Account Type:</strong> Current Account</p>
-      <p><strong>Available Balance:</strong> ₹8,45,12,700.54</p>
-      <a href="home.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
+      <p><strong>Branch:</strong> JW Road Branch, Kolkata</p>
+      <p><strong>IFSC Code:</strong> JWCN0000457</p>
+      <p><strong>MICR Code:</strong> 700240150</p>
+      <p><strong>Opening Date:</strong> 12-May-2016</p>
+      <p><strong>Balance:</strong> ₹8,45,24,566.00</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="Home.html">🏠 Home</a>
+      <a href="Statements.html">📄 Statement</a>
+      <a href="transfer.html">💸 Transfer</a>
+      <a href="profile.html">👤 Profile</a>
+      <a href="beneficiaries.html">👥 Beneficiaries</a>
     </div>
   </main>
+
+  <footer>
+    <p>© 2025 JWcashnest Bank. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
