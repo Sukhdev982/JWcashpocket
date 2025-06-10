@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fund Transfer - JWcashnest Bank</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transfer Money - JWcashnest Bank</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>🏦 JWcashnest BANK</h1>
-    <a href="logout.html" class="logout-link">Logout</a>
+  <header class="header">
+    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
+    <div class="user-info">
+      Welcome, <strong>Sukhdev Mondal</strong>
+    </div>
   </header>
 
-  <main>
-    <h2>💸 Fund Transfer</h2>
+  <main class="dashboard">
+    <h2>Transfer Money</h2>
+    <div class="form-container">
+      <form id="transferForm">
+        <label for="mode"><i class="fa fa-exchange-alt"></i> Transfer Mode:</label>
+        <select id="mode" required>
+          <option value="">-- Select --</option>
+          <option value="NEFT">NEFT</option>
+          <option value="IMPS">IMPS</option>
+          <option value="UPI">UPI</option>
+        </select>
 
-    <form action="#" method="POST" class="transfer-form">
-      <label for="from">From Account:</label>
-      <input type="text" id="from" value="1000054871245007" readonly>
+        <label for="receiver"><i class="fa fa-user"></i> Beneficiary Name:</label>
+        <input type="text" id="receiver" placeholder="e.g., Priya Sen" required />
 
-      <label for="to">To Account Number:</label>
-      <input type="text" id="to" name="to" placeholder="Enter beneficiary account number" required>
+        <label for="accno"><i class="fa fa-hashtag"></i> Account Number:</label>
+        <input type="text" id="accno" placeholder="e.g., 4985100024578" required />
 
-      <label for="name">Beneficiary Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter beneficiary name" required>
+        <label for="ifsc"><i class="fa fa-code"></i> IFSC Code:</label>
+        <input type="text" id="ifsc" placeholder="e.g., SBIN0001245" required />
 
-      <label for="amount">Amount (₹):</label>
-      <input type="number" id="amount" name="amount" placeholder="Enter amount to transfer" required>
+        <label for="amount"><i class="fa fa-rupee-sign"></i> Amount (₹):</label>
+        <input type="number" id="amount" min="1" placeholder="e.g., 5000" required />
 
-      <label for="remarks">Remarks:</label>
-      <input type="text" id="remarks" name="remarks" placeholder="Enter any remarks (optional)">
+        <label for="remark"><i class="fa fa-pencil-alt"></i> Remark (optional):</label>
+        <input type="text" id="remark" placeholder="e.g., Rent payment" />
 
-      <button type="submit">Transfer Now</button>
-    </form>
-
-    <div class="nav-links">
-      <a href="home.html">🏠 Home</a>
-      <a href="beneficiaries.html">👥 Beneficiaries</a>
-      <a href="statements.html">📄 Statements</a>
+        <button type="submit" class="transfer-btn">Transfer Now</button>
+        <p id="msg" style="margin-top: 15px; font-weight: bold;"></p>
+      </form>
     </div>
+    <a href="home.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
   </main>
 
-  <footer>
-    <p>© 2025 JWcashnest Bank. All Rights Reserved.</p>
-  </footer>
+  <script>
+    document.getElementById("transferForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("receiver").value;
+      const amt = document.getElementById("amount").value;
+      document.getElementById("msg").textContent = `₹${amt} transferred successfully to ${name}!`;
+      this.reset();
+    });
+  </script>
 </body>
 </html>
+
 
