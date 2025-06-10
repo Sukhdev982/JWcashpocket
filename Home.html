@@ -2,36 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard - JWcashnest Bank</title>
-  <link rel="stylesheet" href="Style.css">
+  <title>JWcashnest BANK - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="dashboard">
+<body>
   <header>
-    <div class="logo">🏦 JWcashnest BANK</div>
-    <a class="logout" href="index.html">Logout</a>
+    <h1>🏦 JWcashnest BANK</h1>
+    <a href="logout.html" class="logout-btn">Logout</a>
   </header>
-  <main>
-    <h1>Welcome, Sukhdev Mondal</h1>
+
+  <section class="welcome-section">
+    <h2>Welcome, Sukhdev Mondal</h2>
     <p>Account Number: 1000054871245007</p>
     <p>Account Type: Current Account</p>
-    <p>Balance: <span id="balance">*******</span>
-    <button onclick="toggleBalance()">👁️ Show</button></p>
-    <nav>
-      <a href="#">Transfer</a>
-      <a href="#">Statements</a>
-      <a href="#">👤 Profile</a>
-      <a href="#">📄 Bill Payments</a>
-      <a href="#">👥 Beneficiaries</a>
-      <a href="#">💳 Loans & Cards</a>
-      <a href="#">🛠️ Support</a>
-      <a href="#">📊 Account Overview</a>
-    </nav>
-  </main>
-  <script>
-    function toggleBalance() {
-      const bal = document.getElementById("balance");
-      bal.textContent = bal.textContent === "*******" ? "₹8,45,23,500.00" : "*******";
-    }
-  </script>
+    <p>
+      Balance:
+      <span id="balance" style="font-weight: bold;">******</span>
+      <button onclick="toggleBalance()">👁 Show</button>
+    </p>
+  </section>
+
+  <section class="features-grid">
+    <a href="transfer.html">💸 Transfer Money</a>
+    <a href="statements.html">📄 Account Statement</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="billpayment.html">🧾 Bill Payments</a>
+    <a href="beneficiaries.html">👥 Beneficiaries</a>
+    <a href="loan.html">💳 Loans & Cards</a>
+    <a href="support.html">🛠 Support</a>
+    <a href="account.html">📊 Account Overview</a>
+  </section>
 </body>
 </html>
