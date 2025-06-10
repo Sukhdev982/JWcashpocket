@@ -68,5 +68,42 @@
 .logout:hover {
   background: #ffc0c0;
 }
+.account-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.account-card i {
+  font-size: 3rem;
+  color: #005aa7;
+  margin-bottom: 15px;
+}
+
+.account-card h3 {
+  margin-bottom: 10px;
+  color: #003f6b;
+}
+
+.account-card p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #005aa7;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
 
 
