@@ -143,5 +143,30 @@ table tr:hover {
   color: red;
   font-weight: bold;
 }
+.beneficiary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.beneficiary-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.beneficiary-card i {
+  font-size: 2.5rem;
+  color: #005aa7;
+  margin-bottom: 10px;
+}
+
+.beneficiary-card h3 {
+  margin-bottom: 8px;
+  color: #003f6b;
+}
 
 
