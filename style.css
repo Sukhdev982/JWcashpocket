@@ -194,5 +194,43 @@ table tr:hover {
   display: block;
   margin: 10px auto 20px;
 }
+.form-container {
+  background: white;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.transfer-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #005aa7, #2d89ef);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.transfer-btn:hover {
+  opacity: 0.9;
+}
 
 
