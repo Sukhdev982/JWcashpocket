@@ -1,65 +1,76 @@
-/* style.css */
-
-body {
-  font-family: Arial, sans-serif;
+/* Background */
+.login-body {
   margin: 0;
   padding: 0;
-  background-color: #f1f4f9;
-  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
 }
 
-header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
+/* Card Box */
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
   text-align: center;
 }
 
-.logout-btn, .logout-link {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.welcome-section {
-  padding: 20px;
-  background: white;
-  margin: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  margin: 0 20px;
-}
-
-.features-grid a {
-  display: block;
-  text-align: center;
-  padding: 15px;
-  background-color: #e6f0ff;
+.login-card h1 {
   color: #003366;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
 }
 
-.features-grid a:hover {
-  background-color: #cce0ff;
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
+.login-card input {
   padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
 }
 
+.login-card button {
+  background: linear-gradient(to right, #0050b3, #003366);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.password-wrapper input {
+  border: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.password-wrapper span {
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
