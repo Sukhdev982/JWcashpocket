@@ -10,3 +10,11 @@ function login() {
     errorMsg.textContent = "❌ Invalid User ID or Password!";
   }
 }
+function toggleBalance() {
+  const balanceSpan = document.getElementById("balance");
+  if (balanceSpan.textContent === "******") {
+    balanceSpan.textContent = "₹8,45,23,500.00";
+  } else {
+    balanceSpan.textContent = "******";
+  }
+}
