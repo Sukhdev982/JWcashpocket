@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Statements - JWcashnest Bank</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><i class="fa-solid fa-building-columns"></i> JWcashnest <span>BANK</span></div>
+    <div class="user-info">
+      Welcome, <strong>Sukhdev Mondal</strong>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h2>Transaction Statements (2017–2025)</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Amount (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- We'll auto-generate this in JS -->
+        </tbody>
+      </table>
+    </div>
+    <a href="home.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Dashboard</a>
+  </main>
+
+  <script>
+    const descriptions = {
+      credit: ["Salary from Infosys", "Freelance Payment", "Bonus", "NEFT from Rakesh"],
+      debit: ["Amazon Purchase", "Electricity Bill", "Phone Recharge", "DTH Payment", "IRCTC Ticket"]
+    };
+
+    const tbody = document.querySelector("tbody");
+
+    for (let year = 2017; year <= 2025; year++) {
+      for (let month = 1; month <= 12; month++) {
+        const creditAmt = Math.floor(Math.random() * 10000) + 85000;
+        const debitAmt = Math.floor(Math.random() * 10000) + 40000;
+        const creditDesc = descriptions.credit[Math.floor(Math.random() * descriptions.credit.length)];
+        const debitDesc = descriptions.debit[Math.floor(Math.random() * descriptions.debit.length)];
+
+        const creditRow = `<tr>
+          <td>${month}/01/${year}</td>
+          <td>${creditDesc}</td>
+          <td class="credit">Credit</td>
+          <td class="credit">+₹${creditAmt.toLocaleString()}</td>
+        </tr>`;
+
+        const debitRow = `<tr>
+          <td>${month}/15/${year}</td>
+          <td>${debitDesc}</td>
+          <td class="debit">Debit</td>
+          <td class="debit">-₹${debitAmt.toLocaleString()}</td>
+        </tr>`;
+
+        tbody.innerHTML += creditRow + debitRow;
+      }
+    }
+  </script>
+</body>
+</html>
