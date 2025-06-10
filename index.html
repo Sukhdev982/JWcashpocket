@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JWcashnest Bank - Login</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body class="login-page">
+  <div class="login-box">
+    <h1>JWcashnest BANK</h1>
+    <form action="Home.html" method="GET">
+      <label for="userid">User ID:</label>
+      <input type="text" id="userid" name="userid" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span class="toggle-password" onclick="togglePassword()">👁️</span><br><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      pass.type = pass.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>
